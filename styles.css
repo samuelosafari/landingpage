@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+/*CUSTOM FONTS*/
+
+@font-face {
+  font-family: "GILROY-BOLD";
+  src: url(fonts/GILROY-BOLD.TTF) format("truetype");
+}
+
+@font-face {
+  font-family: "GILROY-EXTRABOLD";
+  src: url(fonts/GILROY-EXTRABOLD.OTF) format("OTF");
+}
+
+@font-face {
+  font-family: "GILROY-LIGHT";
+  src: url(fonts/GILROY-LIGHT.OTF) format("OTF");
+}
+
+@font-face {
+  font-family: "GILROY-MEDIUM";
+  src: url(fonts/GILROY-MEDIUM.TTF) format("truetype");
+}
+
+@font-face {
+  font-family: "MANROPE-BOLD";
+  src: url(fonts/MANROPE-BOLD.TTF) format("truetype");
+}
+
+@font-face {
+  font-family: "MANROPE-EXTRABOLD";
+  src: url(fonts/MANROPE-EXTRABOLD.TTF) format("truetype");
+}
+
+@font-face {
+  font-family: "MANROPE-EXTRALIGHT";
+  src: url(fonts/MANROPE-EXTRALIGHT.TTF) format("truetype");
+}
+
+@font-face {
+  font-family: "MANROPE-LIGHT";
+  src: url(fonts/MANROPE-LIGHT.TTF) format("truetype");
+}
+
+@font-face {
+  font-family: "MANROPE-MEDIUM";
+  src: url(fonts/MANROPE-MEDIUM.TTF) format("truetype");
+}
+
+@font-face {
+  font-family: "MANROPE-REGULAR";
+  src: url(fonts/MANROPE-REGULAR.TTF) format("truetype");
+}
+
+/*END OF CUSTOM FONTS*/
+body {
+  padding: 0;
+  margin: 1rem 5rem;
+  font-family: "MANROPE-MEDIUM", sans-serif;
+  line-height: 1.5;
+}
+
+/*NAVBAR*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "GILROY-BOLD";
+  font-weight: bolder;
+}
+.navbar a {
+  color: black;
+}
+.nav-links {
+  display: flex;
+  gap: 3rem;
+}
+
+.icons {
+  margin-left: 0.7rem;
+}
+.side-navLinks {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav-btn {
+  border: 0;
+  background-color: #4f46ba;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 7px;
+  cursor: pointer;
+}
+/*END OF NAVBAR*/
+
+/*HERO SECTION*/
+.hero {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 4rem; */
+  margin-top: 4rem;
+  padding: 1rem 2rem;
+}
+
+.description-btn {
+  border: 0;
+  background-color: #4f46ba;
+  color: #fff;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.description-btns-container{
+  display: flex;
+  margin-top: 2rem;
+}
+
+.fa-circle-play {
+  color: #22D497;
+}
+
+.icon-text{
+  cursor: pointer;
+  display: flex;
+  margin-left: 3rem;
+  align-items: center;
+}
+
+.icon-text a{
+  color: #4f46ba;
+  margin-left: .7rem;
+}
+
+.gettingStartted h2 {
+  color: #4f46ba;
+}
+
+.form-group{
+  margin-bottom: 1rem;
+}
+.form-group input{
+  padding: 1rem 2rem;
+  border-radius: 7px;
+  width: 350px;
+  border: 2px solid #DFE4F1;
+}
+
+.form-group input::placeholder{
+  font-size: 20px;
+}
+
+.form-btn {
+  padding: 1rem 2rem;
+  width: 350px;
+  color: #fff;
+  background-color: #FF7F5C;
+  border: 0;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+}
+/*END OF HERO SECTION*/
+/*FOR CRYPTO-CONTENT*/
+.message-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 3rem;
+}
+
+.crypto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5rem 3rem;
+  background: #f8f9fd;
+  border-radius: 5px;
+}
+
+.crypto-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1.5rem 2.5rem;
+}
+
+.crypto-btn {
+  padding: 1rem 2rem;
+  border: 0;
+  border-radius: 5px;
+  background-color: #4f46ba;
+  color: #fff;
+  cursor: pointer;
+}
+
+.message-container {
+  margin-top: 5rem;
+}
+
+.first-message {
+  position: relative;
+}
+.number1 {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+}
+
+.second-message {
+  position: relative;
+}
+.number2 {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+}
+
+.third-message {
+  position: relative;
+}
+.number3 {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+}
+/*END OF CRYPTO CONTENT*/
+
+/*COMPANIES*/
+.companies {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.company img {
+  margin: 1.5rem;
+}
+
+.companies h2{
+  font-weight: bold;
+}
+/*END OF COMPANIES*/
+
+/*BELIEVE*/
+.believe {
+  margin-top: 3rem;
+  text-align: end;
+  width: 650px;
+  margin-left: 15rem;
+}
+.believe h2 {
+  margin-bottom: 0;
+  font-size: 33px;
+}
+.believe-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.believe-btn {
+  margin-top: .8rem;
+  padding: .8rem 1rem;
+  color: #fff;
+  background-color: #4f46ba;
+  width: 480px;
+  border: 0;
+  border-radius: 7px;
+}
+/*END BELIEVE*/
