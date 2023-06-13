@@ -58,9 +58,10 @@
 /*END OF CUSTOM FONTS*/
 body {
   padding: 0;
-  margin: 1rem 5rem;
+  margin: 1rem 5rem 1rem 4rem;
   font-family: "MANROPE-MEDIUM", sans-serif;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 /*NAVBAR*/
@@ -81,8 +82,7 @@ body {
   display: flex;
   gap: 3rem;
 }
-
-.icons {
+nav-b .icons {
   margin-left: 0.7rem;
 }
 .side-navLinks {
@@ -98,6 +98,10 @@ body {
   padding: 1rem 2rem;
   border-radius: 7px;
   cursor: pointer;
+}
+
+.nav-btn:hover {
+  background-color: #5c53ba;
 }
 /*END OF NAVBAR*/
 
@@ -119,42 +123,46 @@ body {
   cursor: pointer;
 }
 
-.description-btns-container{
+.description-btn:hover {
+  background-color: #5c53ba;
+}
+
+.description-btns-container {
   display: flex;
   margin-top: 2rem;
 }
 
 .fa-circle-play {
-  color: #22D497;
+  color: #22d497;
 }
 
-.icon-text{
+.icon-text {
   cursor: pointer;
   display: flex;
   margin-left: 3rem;
   align-items: center;
 }
 
-.icon-text a{
+.icon-text a {
   color: #4f46ba;
-  margin-left: .7rem;
+  margin-left: 0.7rem;
 }
 
 .gettingStartted h2 {
   color: #4f46ba;
 }
 
-.form-group{
+.form-group {
   margin-bottom: 1rem;
 }
-.form-group input{
+.form-group input {
   padding: 1rem 2rem;
   border-radius: 7px;
   width: 350px;
-  border: 2px solid #DFE4F1;
+  border: 2px solid #dfe4f1;
 }
 
-.form-group input::placeholder{
+.form-group input::placeholder {
   font-size: 20px;
 }
 
@@ -162,12 +170,17 @@ body {
   padding: 1rem 2rem;
   width: 350px;
   color: #fff;
-  background-color: #FF7F5C;
+  background-color: #ff7f5c;
   border: 0;
   border-radius: 7px;
   font-weight: bold;
   cursor: pointer;
 }
+
+.form-btn:hover {
+  background-color: #fd8e70;
+}
+
 /*END OF HERO SECTION*/
 /*FOR CRYPTO-CONTENT*/
 .message-container {
@@ -202,12 +215,16 @@ body {
   cursor: pointer;
 }
 
+.crypto-btn:hover {
+  background-color: #5c53ba;
+}
 .message-container {
   margin-top: 5rem;
 }
 
 .first-message {
   position: relative;
+  margin-right: 1rem;
 }
 .number1 {
   position: absolute;
@@ -217,6 +234,7 @@ body {
 
 .second-message {
   position: relative;
+  margin-right: 1rem;
 }
 .number2 {
   position: absolute;
@@ -249,14 +267,19 @@ body {
   margin: 1.5rem;
 }
 
-.companies h2{
+.companies h2 {
   font-weight: bold;
 }
 /*END OF COMPANIES*/
 
 /*BELIEVE*/
 .believe {
-  margin-top: 3rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  flex-direction: column;
   text-align: end;
   width: 650px;
   margin-left: 15rem;
@@ -272,8 +295,8 @@ body {
 }
 
 .believe-btn {
-  margin-top: .8rem;
-  padding: .8rem 1rem;
+  margin-top: 0.8rem;
+  padding: 0.8rem 1rem;
   color: #fff;
   background-color: #4f46ba;
   width: 480px;
@@ -281,3 +304,502 @@ body {
   border-radius: 7px;
 }
 /*END BELIEVE*/
+
+/*MEDIA OBJECTS*/
+.card {
+  width: 342px;
+  height: 450px;
+  border-radius: 22px;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  box-shadow: 0px 64px 388px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+}
+.media {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.media__title {
+  margin: 0.4rem 1rem;
+}
+.card__title {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.card__image {
+  height: 70px;
+  width: 70px;
+}
+
+.media__image {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.theresa {
+  background: #ffaa00;
+}
+
+.albert {
+  background: #009e9d;
+}
+
+.robert {
+  background: #0091d0;
+}
+.media__description {
+  margin: 0.5rem 1rem;
+  color: #6c6c6c;
+}
+
+.link-arrow {
+  font-family: GILROY-MEDIUM;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: left;
+  color: #ff6160;
+}
+.link-arrow::after {
+  content: url(images/arrowlink.svg);
+  margin-left: 1rem;
+  transition: margin 0.5s;
+}
+.link-arrow:hover::after {
+  margin-left: 1.5rem;
+}
+/*END OF MEDIA OBJECTS*/
+/*MENTOR CARD*/
+.media-container {
+  position: relative;
+}
+
+.mentor-card {
+  width: 370px;
+  height: 302px;
+  border-radius: 22px;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  box-shadow: 0px 64px 388px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  left: 71%;
+  top: 50%;
+}
+
+.mentor__title {
+  margin-bottom: 0;
+}
+
+.mentor__description {
+  margin-top: 0;
+  color: #6c6c6c;
+}
+
+.btn-mentor {
+  /* font-family: Poppins; */
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  background: #0091d0;
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+.btn-mentor:hover {
+  background-color: #1096cf;
+}
+/*END OF MENTOR CARD*/
+
+/*WHY CHOOSE US*/
+.chooseus__title {
+  font-family: "GILROY-BOLD";
+  font-weight: bold;
+  font-size: 14px;
+  text-align: left;
+  color: #3734a9;
+}
+.chooseus__description {
+  color: #505887;
+}
+.icon-container {
+  background: #fdbc64;
+  border-radius: 100%;
+  height: 24px;
+  width: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.benefit__description {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  color: #505887;
+}
+
+.media-choose {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 10rem;
+}
+/*END OF WHY CHOOSE US*/
+/*PUSH CODE WITH EASE*/
+.howto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.howto__description {
+  color: #64607d;
+}
+
+.card__description {
+  color: #64607d;
+}
+
+.howto__title {
+  margin-bottom: 0;
+}
+
+/*END OF CODE WITH EASE*/
+
+/*DO BELIEVING OH*/
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.single-card {
+  width: 380px;
+  height: 300px;
+  border-radius: 22px;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.exception {
+  filter: drop-shadow(0px 64px 388px rgba(0, 0, 0, 0.1));
+}
+
+.link-arrow_green {
+  color: #01966b;
+}
+.link-arrow_green::after {
+  content: url(images/arrowlink\ green.svg);
+  margin-left: 1rem;
+  transition: margin 0.5s;
+}
+
+.link-arrow_green:hover::after {
+  margin-left: 1.5rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.platform-btn {
+  padding: 0.7rem 2rem;
+  border-radius: 10px;
+  background: #4f46ba;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+.platform-btn:hover {
+  background-color: #594fc1;
+}
+/*END OF DO BELIEVING OH*/
+
+/*PREFERENCE*/
+.preference-container {
+  width: 100%;
+  height: 170px;
+  border-radius: 22px;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  box-shadow: 0px 64px 388px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 4rem;
+}
+.preference {
+  display: flex;
+  align-items: center;
+}
+
+.preference__description {
+  margin-left: 1rem;
+  color: #64607d;
+}
+
+.svg-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+  background: #e9ecf2;
+}
+/*END OF PREFERENCE*/
+
+/*TESTIMONIAL SECTION*/
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-container {
+  margin-top: 6rem;
+}
+.testimonial-client {
+  width: 90%;
+  height: 449px;
+  background: transparent;
+  position: relative;
+}
+
+.segment-client {
+  position: absolute;
+  left: 20px;
+  top: 60%;
+}
+
+.quote-icon-container {
+  width: 70px;
+  height: 70px;
+  background: #3734a9;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  top: 21%;
+  right: 1.4rem;
+}
+
+.happyclient-slider-container {
+  margin-top: 1rem;
+}
+
+.arrow-container {
+  width: 34px;
+  height: 34px;
+  background: #3734a9;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.testimonial__title {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: left;
+  color: #3734a9;
+  margin-bottom: 0;
+}
+.testimonial__description {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.client-image {
+  width: 90%;
+}
+
+.testimony {
+  color: #757095;
+}
+/*END TESTIMONIAL SECTION*/
+
+/*BLOG SECTION*/
+.blog-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.blog-btn {
+  padding: 0.7rem 2rem;
+  background: #4f46ba;
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.blog-btn:hover {
+  background-color: #5a51ba;
+}
+
+.blog-media {
+  display: flex;
+  align-items: center;
+}
+.blogmedia__body {
+  margin-left: 1rem;
+}
+
+.blog__details {
+  margin-top: 0;
+}
+
+.date__category,
+.blog__description {
+  color: #64607d;
+}
+
+/*END OF BLOG SECTION*/
+
+/* CTA SECTION */
+.cta-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3734a9;
+  color: #fff;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 2rem 5.5rem;
+}
+
+.calltoaction-container {
+  margin-top: 5rem;
+}
+/* END CTA SECTION */
+
+/*FOOTER*/
+.footer-stuffs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.company-items {
+  padding-left: 0;
+}
+
+.input-group {
+  border: 1px solid #ccc;
+  display: flex;
+}
+
+.input-group input {
+  flex-grow: 1;
+  outline: 0;
+  padding: 0.5rem 1rem;
+}
+
+.input-group button {
+  padding: 0.5rem 3rem;
+  background: #3734a9;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+.arshaky__title {
+  font-family: GILROY-BOLD;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 28px;
+  text-align: left;
+  color: #1b1c31;
+}
+
+.arshaky__description {
+  font-family: MANROPE-MEDIUM;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: left;
+  color: #757095;
+}
+
+.arshaky-media {
+  width: 127.98px;
+  height: 20px;
+  background: transparent;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.company-items li {
+  margin-bottom: 0.7rem;
+  color: #181433;
+}
+
+.letter-message {
+  color: #181433;
+}
+/*END OF FOOTER*/
+
+/* BOTTOM ELEMENT */
+
+.bottom-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-text {
+  font-family: MANROPE-MEDIUM;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #181433;
+}
+
+.subscribe-btn:hover {
+  background-color: #5a51ba;
+}
+/* BOTTOM ELEMENT */
